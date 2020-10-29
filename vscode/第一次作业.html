@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(timg.jpg);
+            background-size: cover;
+        }
+
+        h2 {
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        p {
+            color: aquamarine;
+
+        }
+
+        .box {
+            width: 500px;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            background: rgba(0, 0, 0, .3);
+            padding: 30px;
+        }
+        ul
+        {   margin: none;
+            padding: none;
+            list-style-type: none;
+            width:200px;
+            background-color: grey;
+
+        }
+        li a {
+            display: block;
+            width: 200px;
+            
+        color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: x-large;
+        }
+        
+        li a:hover {
+            background-color: yellowgreen;
+            color:black ;
+
+        }
+
+
+
+
+         .password {
+                color: whitesmoke;
+                margin-bottom: 70px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid whitesmoke;
+                background: transparent;
+
+                text-indent: 10em;  
+            }
+            li a.active{
+                background-color: green;
+                color: black;
+            }
+            .door1{
+                position:fixed;
+                right: 550px;
+            bottom: 120px;
+            width: 40px;
+            height: 60px;
+
+            }
+            .block4{position: absolute;
+                width: 150px;
+                height: 150px;
+                margin-right: 25px;
+            }/*这里想让图片居中，但好像没有在中间*/
+            .block3{position: fixed;
+            padding: 40px;
+            bottom: 100px;
+            right: 50px;
+            width: 200px;
+            height: 220px;
+            background-color: azure;
+            z-index: -1;
+            text-align: center;
+            }
+            .block2{background-color: burlywood;
+                position:fixed;
+                right:  300px;
+            bottom: 120px;
+            width: 200px;
+            height: 100px;
+
+            }
+            .block1{background-color: skyblue;
+                position:fixed;
+                right:  550px;
+            bottom: 120px;
+            width: 100px;
+            height: 100px;
+
+            }
+             img{
+                width: 100%;
+                height: 100%;
+
+            }
+       
+    </style>
+    <script>
+        function kaishi(){
+
+            alert("welcome to an amazing world !")
+        }
+        /*function warning(){
+            var x=document.getElementsById("passwoed");
+            if x !="vscode11"
+                alert("错误！！！");
+        }*/
+    </script>
+</head>
+
+<body onload="kaishi()">
+    <div class="box">
+        <h2>Enter an amazing world !</h2>
+        <form>
+            <div class="xbox">
+                <p><b>想开启探索之旅请输入暗号</b></p>
+                <p>输入错误，系统将发出警告</p>
+                <input  type="password" class="password" id="password">
+                <label   for="password">在这里输入八位数的暗号！</label><br>
+                <input type="button" value="提交">
+            </div>
+        </form>
+    </div>
+    <div class="daohanaglan">
+        <ul>
+            <li ><a href=""class="active">hello world!</a></li>
+            <li> <a href="#">who  am  i?</a></li>
+            <li> <a href="#">where am i?</a></li>
+            <li> <a href="#">what am i doing now?</a></li>
+            <li> <a href="#">how to explore?</a></li>
+            
+        </ul>
+     </div>
+     <div class="block3"> 
+         <p>a door you should find a key -the way to open it  </p>> 
+        <div class="block4"><img src="door.jpg" alt=""></div>
+    </div>
+     <div class="block2"></div>
+     <div class="block1"></div>
+     
+        
+</body>
+
+</html>
